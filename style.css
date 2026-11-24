@@ -1,0 +1,225 @@
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Website Background */
+body {
+    background-color: #F5EBDD;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Brand Name */
+h1 {
+    color: #795548;
+    font-size: 40px;
+    letter-spacing: 8px;
+    margin-bottom: 15px;
+}
+
+/* Brand Description */
+p {
+    color: #8B5E66;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+/* Navigation Bar */
+
+header {
+    background-color: #FFFFFF;
+    padding: 30px 7%;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.05);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #B76E79;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: #E5A4AD;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #684D50;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #bab9ff80;
+}
+
+.order-btn {
+    background-color: #B76E79;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #8F4F5A;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 7%;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+/* Sweet Products Section */
+
+.products {
+    padding: 80px 7%;
+    background-color: #FFF8F5;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    color: #B76E79;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.section-title h2 {
+    color: #563B40;
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+.section-title p {
+    color: #80676B;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    color: #563B40;
+    margin: 18px 0 10px;
+}
+
+.product-card p {
+    color: #80676B;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.price {
+    display: block;
+    color: #B76E79;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: #B76E79;
+    color: white;
+    border: none;
+    padding: 11px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #8F4F5A;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  header, nav {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
